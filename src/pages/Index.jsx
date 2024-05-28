@@ -9,6 +9,7 @@ const Index = () => {
           <Link href="#" color="white">Home</Link>
           <Link href="#" color="white">About</Link>
           <Link href="#" color="white">Contact</Link>
+          <Link href="/events" color="white">Events</Link>
         </HStack>
         <Spacer />
       </Flex>

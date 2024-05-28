@@ -9,11 +9,7 @@ const supabase = createClient(supabaseUrl, supabaseKey);
 export const queryClient = new QueryClient();
 
 export function SupabaseProvider({ children }) {
-    return (
-        <QueryClientProvider client={queryClient}>
-            {children}
-        </QueryClientProvider>
-    );
+    return React.createElement(QueryClientProvider, { client: queryClient }, children);
 }
 
 // Custom hook to fetch data from Supabase
